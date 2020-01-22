@@ -199,6 +199,7 @@
   .form-heading {
     display: flex;
     align-self: center;
+    overflow: auto;
   }
   .jobview-form {
     width: calc(100% - 2rem);
