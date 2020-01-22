@@ -233,9 +233,11 @@
 
   .jobview-form div.all-inputs {
       width: 100%;
+      overflow: auto;
     div.form-input {
       flex-direction: column;
       width: 100%;
+      overflow: auto;
     }
   }
   .jobinfo-save-btn {
