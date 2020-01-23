@@ -206,11 +206,16 @@
   .form-heading {
     display: flex;
     align-self: center;
+<<<<<<< HEAD
     min-height: 80px;
+=======
+    overflow: auto;
+>>>>>>> e986a09aeb7f7e7c1225f645bb1cdb9d2994d27a
   }
   .jobview-form {
     width: calc(100% - 2rem);
     margin: 1rem;
+    overflow: auto;
   }
   .job-card button.job-card-delete {
     align-self: center;
@@ -240,8 +245,7 @@
 
   .jobview-form div.all-inputs {
       width: 100%;
-      margin: 0;
-      
+    
     div.form-input {
       flex-direction: column;
       width: 100%;
