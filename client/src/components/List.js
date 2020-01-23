@@ -29,6 +29,7 @@ const List = (props) => {
                 handleUpdate={props.handleUpdate} 
                 deleteJob={props.deleteJob} 
                 job={job} 
+                name={name}
               />
             </div>
           </>
@@ -56,6 +57,7 @@ const List = (props) => {
             add={props.add} 
             hide={hide} 
             show={openModal} 
+            name={props.name}
           /> 
           : null}
         {renderJobs(props.name)}

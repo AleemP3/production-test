@@ -199,6 +199,7 @@
   .container {
     -webkit-overflow-scrolling: touch;
     max-width: 360px;
+    flex-wrap: nowrap;
     overflow: auto;
     align-self: center;
   }
@@ -246,10 +247,12 @@
       width: 100%;
       height: fit-content;
       flex-wrap: nowrap;
+      min-height: 80px
     }
   }
   .jobinfo-save-btn {
     align-self: center;
+    min-height: fit-content;
   }
 
   .interview-form {
@@ -257,5 +260,12 @@
   }
   .interview-input {
     width: 95%;
+  }
+  .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
   }
 }
