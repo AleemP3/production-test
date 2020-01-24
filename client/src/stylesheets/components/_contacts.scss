@@ -12,7 +12,7 @@
   --theme-yellow-main: #f2f3d9;
 }
 
-.main-contact-container {
+.main-form-container {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -94,18 +94,22 @@
   margin-top: 1rem;
 }
 
+.block {
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (max-width: 550px) {
-  .main-contact-container {
+  .main-form-container {
     width: 100%;
     max-width: 360px;
-    flex-wrap: nowrap;
     overflow: auto;
-    align-self: center;
-    flex-direction: column;
+    display: block;
+    margin: 0 auto;
     
     .contact-container {
       justify-content: space-around;
-      display: flex;  
+      display: block;  
 
       h2.form-heading {
         margin: 1rem;
@@ -116,6 +120,7 @@
     .contacts {
       margin: 1rem 0 0 0;
       width: 100%;
+      position: relative;
 
       .contact-card {
         min-width: 300px;
@@ -133,4 +138,15 @@
     margin: 1rem;
     justify-content: center;
   }
+
+  .contact-form {
+    min-height: fit-content;
+  }
+
+  .block {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
 }
